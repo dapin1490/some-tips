@@ -19,3 +19,7 @@ gh auth login
 # First copy your one-time code: 뒤에 나오는 8자리 코드 복사 후 엔터,
 # 웹페이지에서 깃허브 로그인 후 6번에서 복사한 코드 붙여넣기
 # 이후부터 터미널에서 본인 깃허브 계정의 모든 기능 사용 가능
+
+# config user info
+git config --global user.email "dapin1490@gmail.com"
+git config --global user.name "dapin1490"
