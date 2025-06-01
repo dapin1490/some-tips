@@ -7,3 +7,11 @@
   git reset HEAD^
   git push -f origin "브랜치명"
   ```
+- gh 로그인 상태 확인  
+  ```sh
+  gh auth status
+  ```
+- gh로 clone하기: gh로 로그인된 사용자로 git 사용 가능하게 됨  
+  ```sh
+  gh repo clone <OWNER/REPONAME>
+  ```
