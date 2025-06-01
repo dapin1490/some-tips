@@ -114,17 +114,16 @@ python3-yaml python3-ply \
 libglib2.0-dev libgstreamer-plugins-base1.0-dev
 sudo apt install ros-humble-camera-ros
 
+# upgrade meson: you need meson version >= 0.63
+sudo apt remove meson
+sudo pip3 install --upgrade meson
+hash -r  # 실행 경로 캐시 지우기
+source ~/.bashrc
+# upgrade meson complete
+
 git clone https://github.com/raspberrypi/libcamera.git
 
 cd libcamera
-# upgrade meson: you need meson version >= 0.63
-pip3 show meson # if exist, execute next. if not, delete apt meson and reinstall pip meson
-# sudo apt remove meson
-# pip3 install --user meson
-pip3 install --user --upgrade meson
-echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/.bashrc
-source ~/.bashrc
-# upgrade meson complete
 meson setup build --buildtype=release -Dpipelines=rpi/vc4,rpi/pisp -Dipas=rpi/vc4,rpi/pisp -Dv4l2=true -Dgstreamer=enabled -Dtest=false -Dlc-compliance=disabled -Dcam=disabled -Dqcam=disabled -Ddocumentation=disabled -Dpycamera=enabled
 ninja -C build
 sudo ninja -C build install
