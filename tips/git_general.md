@@ -15,3 +15,22 @@
   ```sh
   gh repo clone <OWNER/REPONAME>
   ```
+- 기존 폴더를 깃허브 레포지토리로 init해서 gh로 push하기
+  ```sh
+  # 레포지토리 초기화, 브랜치 이름은 main
+  git init -b main
+  # 상태 확인 
+  git status
+  # 초기 파일 모두 add 후 commit
+  git add .
+  git commit -m "init"
+  # 원격에 비공개 레포지토리로 생성 및 push
+  gh repo create <레포지토리-이름> --private --source=. --remote=origin --push # 공개 레포지토리로 할 경우 --private는 안 써도 됨
+  ```
+- 만약 원격에서 브랜치 이름을 바꿨을 경우 (`master` -> `main`)
+  ```sh
+  git branch -m master main
+  git fetch origin
+  git branch -u origin/main main
+  git remote set-head origin -a
+  ```
