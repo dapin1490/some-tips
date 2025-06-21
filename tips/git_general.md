@@ -25,7 +25,7 @@
   git add .
   git commit -m "init"
   # 원격에 비공개 레포지토리로 생성 및 push
-  gh repo create <레포지토리-이름> --private --source=. --remote=origin --push # 공개 레포지토리로 할 경우 --private는 안 써도 됨
+  gh repo create <레포지토리-이름> --private --source=. --remote=origin --push # 공개 레포지토리로 할 경우 --private -> --public
   ```
 - 만약 원격에서 브랜치 이름을 바꿨을 경우 (`master` -> `main`)
   ```sh
