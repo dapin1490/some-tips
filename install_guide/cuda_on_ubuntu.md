@@ -11,6 +11,14 @@
     ```shell
     conda update -n base -c defaults conda
     ```
+4. activate venv
+    ```shell
+    conda activate [venv]
+    ```
+5. deactivate venv
+    ```shell
+    conda deactivate
+    ```
 
 # tensorflow on conda
 1. create conda env
