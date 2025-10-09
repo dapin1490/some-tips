@@ -13,6 +13,7 @@ some tips or install scripts,, or memo,, for anything
 - [`init_ubuntu.sh`](install_guide/init_ubuntu.sh) - Ubuntu 초기 설정 스크립트 (나눔폰트, D2Coding, VSCode, VirtualBox Guest Additions)
 - [`ros_humble_for_turtlebot.sh`](install_guide/ros_humble_for_turtlebot.sh) - TurtleBot3용 ROS 2 Humble 설치 및 설정 스크립트
 - [`ros_humble+gazebo.sh`](install_guide/ros_humble+gazebo.sh) - ROS 2 Humble과 Gazebo 시뮬레이션 환경 설치 스크립트
+- [`cuda_on_ubuntu.md`](install_guide/cuda_on_ubuntu.md) - Ubuntu에서 NVIDIA 드라이버, CUDA, Anaconda, TensorFlow, PyTorch 설치 가이드
 
 ### 📂 tips/
 다양한 개발 및 시스템 관리 팁 모음
@@ -26,6 +27,8 @@ some tips or install scripts,, or memo,, for anything
 
 - [`chatGPT.md`](util/chatGPT.md) - ChatGPT, Gemini 등 AI 도구 맞춤 설정 프롬프트 모음
 - [`draw_graph/korean_matplotlib.py`](util/draw_graph/korean_matplotlib.py) - 한국어 폰트 설정이 포함된 Matplotlib 그래프 생성 스크립트
+- [`draw_graph/number_on_barplot.py`](util/draw_graph/number_on_barplot.py) - 막대 그래프에 각 막대별 숫자 표시하는 함수
+- [`power_charge_threshhold.md`](util/power_charge_threshhold.md) - Ubuntu에서 배터리 충전 임계값 설정하는 방법
 - [`timestamp.py`](util/timestamp.py) - 한국 시간대 기준 타임스탬프 생성 유틸리티
 
 ### 📂 vscode_profile/
